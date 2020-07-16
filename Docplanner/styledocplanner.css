@@ -1,0 +1,147 @@
+.element{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width:400px;
+}
+.links_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+}
+.dep :hover .dropdown{
+    display: block;
+    padding-left: 0px;
+    border: 1px solid black;
+}
+.menu a {
+    color:gray;
+    text-decoration: none;
+    cursor:pointer;
+}
+.menu a:hover{
+    color: #00c3a5;
+}
+.titre{
+    text-align: center;
+    color:#00c3a5
+}
+.paragraphe{
+    display: flex;
+    width:800px;
+    padding-left:100px;
+    padding-right:100px;
+}
+.paragraphe p{
+    width: 500px;
+    text-align: justify;
+}
+.box1{
+    border:1px solid black;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #00c3a5;
+    color: white;
+    overflow: hidden;
+}
+.style-image{
+    width: 300px;
+    height: 250px;
+    margin-left: 200px;
+}
+.box2{
+    border:1px solid black;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #3d83df;
+    color: white;
+    overflow: hidden;
+    padding: 15px;   
+}
+.pos-box{
+    display: flex;
+    justify-content: space-around;
+}
+.text-logo{
+   color: #00c3a5;
+   width:300px;
+}
+.logo{
+    width:50px;
+    height:50px;
+}
+.list-style{
+    display: flex;
+    justify-content: space-around;
+    width:600px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.liste-style li a{
+    text-decoration: none;
+    color: gray;
+    font-size: larger;
+}
+.liste-style li a:hover{
+    color:#00c3a5
+}
+.text-box{
+    display: flex;
+    justify-content: space-around;
+}
+.page2-mini-box{
+    display: flex;
+    justify-content: space-around;
+    background-color: #dff8df;
+    height:500px;
+    overflow: hidden;
+}
+.page2-mini-box1{
+    width:200px;
+    height:200px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+.page2-div-minbox{
+display: flex;
+justify-content: space-around;
+width:600px;
+margin:5px;
+}
+.page3-text{
+    text-align: center;
+}
+.page3-text h1{
+    color: #00c3a5;
+}
+.page3-text p{
+    color: gray;
+}
+.galerie{
+    width:320px;
+    height:350px;
+}
+.box-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.footer{
+text-align: center;
+}
+
+.footer a :hover{
+    text-decoration: none;
+}
+footer a{
+text-decoration: underline;
+}

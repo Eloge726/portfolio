@@ -1,0 +1,72 @@
+PROCEDURE Dot_Product (v1,v2, VAR PS: INTEGER)
+VAR
+  
+BEGIN
+
+    FOR i FROM 0 TO v1.length-1 STEP DO
+    FOR j FROM 0 TO v2.length-1 STEP DO
+       
+        PS := PS + v1[i] * v2[i];
+
+    END_FOR
+
+END
+
+
+
+
+
+
+ALGORITHM With_Procedure
+VAR
+    sum:INTEGER:=0;
+    v1:ARRAY_OF INTEGER[3];
+    v2:ARRAY_OF INTEGER[3];
+BEGIN
+    Read(v1)
+    Read(v2)
+    Dot_Product(v1,v2,sum)
+    Write(sum)
+
+    IF (sum == 0) THEN
+        Write ("Les deux vecteurs sont orthogonaux");
+    ELSE
+        Write ("Les deux vecteurs ne sont pas orthogonaux");
+    END_IF
+
+    
+END
+
+FUNCTION Dot_Product(v1, v2) : INTEGER
+VAR
+    PS:INTEGER:=0
+BEGIN
+   FOR i FROM 0 TO v1.length-1 STEP DO
+   FOR j FROM 0 TO v2.length-1 STEP DO
+       
+        PS := PS + v1[i] * v2[i];
+    RETURN PS ;
+END
+
+
+
+
+ALGORITHM With_Function
+VAR
+    sum:INTEGER:=0;
+    v1:ARRAY_OF INTEGER[3];
+    v2:ARRAY_OF INTEGER[3];
+BEGIN
+    Read(v1)
+    Read(v2)
+    sum := Dot_Product(v1, v2)
+    Write(sum)
+
+    IF (sum == 0) THEN
+        Write ("Les deux vecteurs sont orthogonaux");
+    ELSE
+        Write ("Les deux vecteurs ne sont pas orthogonaux");
+    END_IF
+
+    
+END
